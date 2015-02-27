@@ -12,22 +12,21 @@
     "content_scripts": [
         {
             "matches": [
-                "http://*/*",
-                "https://*/*"
+                "https://github.com/*",
+                "https://www.github.com/*"
             ],
             "css": [
                 "styles/inject.css"
             ],
             "js": [
                 "javascripts/ext/jquery.min.js",
-                "javascripts/ext/URI.min.js",
-                "javascripts/ext/underscore.min.js",
-                "javascripts/ext/underscore.string.min.js",
                 "javascripts/inject.js"
             ]
         }
     ],
+    "options_page": "options.html",
     "permissions": [
-        "tabs"
+        "tabs",
+        "storage"
     ]
 }
