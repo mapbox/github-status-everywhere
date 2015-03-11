@@ -13,7 +13,7 @@ A fork of [Mike Dougherty's extension](https://github.com/mikedougherty/chrome-c
 # Install
 
 ```sh
-$ git clone git@github.com:tmcw/chrome-commit-status.git
+$ git clone git@github.com:mapbox/github-status-everywhere.git
 ```
 
 * open [chrome://extensions](chrome://extensions/)
