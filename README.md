@@ -1,4 +1,4 @@
-GitHub Commit Status Coloration
+GitHub Status Everywhere
 ========
 
 ![](screenshot.png)
