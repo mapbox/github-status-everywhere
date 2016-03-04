@@ -56,17 +56,10 @@ chrome.storage.sync.get({
                 .attr('class', 'tooltipped tooltipped-s')
                 .attr('href', status.target_url)
                 .attr('aria-label', status.state + ': ' + status.description)
-                .append($('<svg></svg>')
-                    .attr('aria-hidden', true)
-                    .attr('role', 'img')
-                    .attr('version','1.1')
-                    .attr('viewbox','0 0 14 16')
-                    .attr('class', 'octicon ' + icons[status.state]))
-                .append($(icon_svg_paths[status.state]))
+                .append($('<svg aria-hidden="true" class="octicon '+icons[status.state]+'" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14">'+icon_svg_paths[status.state]+'</svg>'))
                 .appendTo(statuses);
         });
     }
-
     $(function() {
         $(document)
             .on('ready', pageUpdate)
